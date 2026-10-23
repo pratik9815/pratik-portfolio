@@ -1,0 +1,60 @@
+/* Canonical visual tokens. DESIGN.md documents this source. */
+:root {
+  color-scheme: light;
+  --bg: #f7f7fa;
+  --surface: #ffffff;
+  --surface-alt: #eeeef4;
+  --text: #25242c;
+  --muted: #6d6b79;
+  --subtle: #82808e;
+  --border: #e4e3eb;
+  --primary: #7050d7;
+  --primary-hover: #5f3fc3;
+  --primary-soft: #eee9fb;
+  --primary-text: #ffffff;
+  --green: #368362;
+  --green-soft: #edf6f0;
+  --header-bg: #f7f7faeb;
+  --contact-bg: #eeebf8;
+  --focus: #7050d7;
+  --scroll-thumb: #b9b5c8;
+  --scroll-hover: #9890ae;
+  --scroll-active: #7050d7;
+  --scroll-track: #f0eff5;
+  --shadow: 0 16px 50px #3023440a;
+  --font-display: 'Space Grotesk Variable', sans-serif;
+  --font-body: 'DM Sans Variable', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+  --page-width: 1160px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-pill: 999px;
+  --section-gap: 104px;
+  --transition: 180ms ease;
+}
+
+[data-theme='dark'] {
+  color-scheme: dark;
+  --bg: #121217;
+  --surface: #1b1b23;
+  --surface-alt: #22222d;
+  --text: #eeedf4;
+  --muted: #aaa6b9;
+  --subtle: #9691a8;
+  --border: #30303c;
+  --primary: #b29af8;
+  --primary-hover: #c4b1ff;
+  --primary-soft: #302742;
+  --primary-text: #201831;
+  --green: #80caa3;
+  --green-soft: #1c2b25;
+  --header-bg: #121217eb;
+  --contact-bg: #242033;
+  --focus: #b29af8;
+  --scroll-thumb: #4f495e;
+  --scroll-hover: #76658c;
+  --scroll-active: #b29af8;
+  --scroll-track: #1b1923;
+  --shadow: 0 16px 50px #00000024;
+}

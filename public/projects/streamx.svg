@@ -1,0 +1,164 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="840"
+  height="540"
+  viewBox="0 0 840 540"
+  fill="none"
+>
+  <defs>
+    <linearGradient
+      id="background"
+      x1="0"
+      y1="0"
+      x2="840"
+      y2="540"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop stop-color="#173D3C" />
+      <stop offset="1" stop-color="#0C272A" />
+    </linearGradient>
+    <linearGradient
+      id="message"
+      x1="490"
+      y1="190"
+      x2="766"
+      y2="330"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop stop-color="#BCEBCE" />
+      <stop offset="1" stop-color="#8BCBAF" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-30%" width="150%" height="180%">
+      <feDropShadow
+        dx="0"
+        dy="12"
+        stdDeviation="16"
+        flood-color="#031A1C"
+        flood-opacity=".22"
+      />
+    </filter>
+  </defs>
+  <rect width="840" height="540" fill="url(#background)" />
+  <circle cx="697" cy="259" r="206" stroke="#5C9585" stroke-opacity=".16" />
+  <circle
+    cx="697"
+    cy="259"
+    r="160"
+    stroke="#5C9585"
+    stroke-opacity=".2"
+    stroke-dasharray="4 8"
+  />
+  <g font-family="Arial, Helvetica, sans-serif">
+    <g transform="translate(64 49)">
+      <rect width="34" height="34" rx="11" fill="#91D4B7" />
+      <path
+        d="M9 10h16v11H15l-5 4v-4H9V10Z"
+        stroke="#173D3C"
+        stroke-width="1.7"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M13 15h8m-8 3h5"
+        stroke="#173D3C"
+        stroke-width="1.4"
+        stroke-linecap="round"
+      />
+      <text
+        x="47"
+        y="24"
+        fill="#E0F0E6"
+        font-size="23"
+        font-weight="600"
+        letter-spacing="-.8"
+      >
+        stream
+        <tspan fill="#91D4B7">x</tspan>
+      </text>
+    </g>
+    <text x="65" y="150" fill="#7FAE9D" font-size="10" letter-spacing="2.4">
+      SMALL MOMENTS. REAL CONNECTION.
+    </text>
+    <text
+      x="60"
+      y="222"
+      fill="#F1F7F1"
+      font-size="76"
+      font-weight="700"
+      letter-spacing="-3"
+    >
+      Closer.
+    </text>
+    <text
+      x="60"
+      y="298"
+      fill="#9DDABD"
+      font-size="65"
+      font-weight="700"
+      letter-spacing="-2.8"
+    >
+      In real time.
+    </text>
+    <text x="65" y="342" fill="#9DBEB0" font-size="13">
+      Messaging that keeps the conversation moving.
+    </text>
+    <g filter="url(#shadow)" transform="rotate(-5 623 198)">
+      <path
+        d="M503 150a15 15 0 0 1 15-15h213a15 15 0 0 1 15 15v58a15 15 0 0 1-15 15H530l-25 18v-22a15 15 0 0 1-2-11v-58Z"
+        fill="#E9F3EA"
+      />
+      <circle cx="527" cy="157" r="5" fill="#589D7B" />
+      <text x="540" y="161" fill="#5F8270" font-size="9" letter-spacing=".5">
+        A GOOD CONVERSATION
+      </text>
+      <text x="522" y="193" fill="#28483A" font-size="20" font-weight="500">
+        Have something to share?
+      </text>
+    </g>
+    <g filter="url(#shadow)" transform="rotate(5 658 298)">
+      <path
+        d="M543 261a15 15 0 0 1 15-15h193a15 15 0 0 1 15 15v57a15 15 0 0 1-15 15h-1v20l-24-20H558a15 15 0 0 1-15-15v-57Z"
+        fill="url(#message)"
+      />
+      <text x="564" y="283" fill="#244B3B" font-size="21" font-weight="500">
+        I’m listening.
+      </text>
+      <text x="564" y="314" fill="#558B71" font-size="9">
+        Connected, wherever you are.
+      </text>
+      <path
+        d="m731 308 4 4 7-8m-1 4 4 4 7-8"
+        stroke="#477B62"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </g>
+    <g transform="translate(580 373)">
+      <rect width="99" height="38" rx="19" fill="#365B50" />
+      <circle cx="24" cy="19" r="3" fill="#91B4A1" />
+      <circle cx="37" cy="19" r="3" fill="#B4D8BF" />
+      <circle cx="50" cy="19" r="3" fill="#D4EBD7" />
+      <text x="63" y="23" fill="#A3C3AE" font-size="8">typing</text>
+    </g>
+    <path d="M65 441H775" stroke="#54786B" stroke-opacity=".4" />
+    <g fill="#B2CFBE" font-size="10">
+      <text x="65" y="469">Direct &amp; group chat</text>
+      <text x="275" y="469">Read receipts</text>
+      <text x="461" y="469">Live presence</text>
+      <text x="648" y="469">Image messages</text>
+    </g>
+    <text x="65" y="509" fill="#648E7D" font-size="8" letter-spacing="1.3">
+      ASP.NET CORE / SIGNALR / POSTGRESQL
+    </text>
+    <text
+      x="775"
+      y="509"
+      text-anchor="end"
+      fill="#648E7D"
+      font-size="8"
+      letter-spacing=".7"
+    >
+      PROJECT ILLUSTRATION
+    </text>
+  </g>
+</svg>
