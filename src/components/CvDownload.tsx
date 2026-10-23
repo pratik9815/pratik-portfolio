@@ -1,6 +1,7 @@
 import { ArrowDownToLine, LoaderCircle } from 'lucide-react';
 import { useRef, useState } from 'react';
 import type { PortfolioData } from '../features/portfolio/types';
+import { publicAssetUrl } from '../lib/publicAssetUrl';
 
 export function CvDownload({ data }: { data: PortfolioData }) {
   const [status, setStatus] = useState<'idle' | 'busy' | 'error'>('idle');
@@ -30,7 +31,7 @@ export function CvDownload({ data }: { data: PortfolioData }) {
     return (
       <a
         className="button button-secondary"
-        href={cv.url}
+        href={publicAssetUrl(cv.url)}
         download={cv.filename}
       >
         <ArrowDownToLine size={16} /> Download CV{' '}

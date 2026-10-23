@@ -1,5 +1,6 @@
 import { Layers3 } from 'lucide-react';
 import type { Project } from '../features/portfolio/types';
+import { publicAssetUrl } from '../lib/publicAssetUrl';
 
 export function ProjectArtwork({ project }: { project: Project }) {
   return (
@@ -8,7 +9,7 @@ export function ProjectArtwork({ project }: { project: Project }) {
     >
       {project.image ? (
         <img
-          src={project.image}
+          src={publicAssetUrl(project.image)}
           alt={`${project.name} project illustration`}
           loading="lazy"
           width="840"

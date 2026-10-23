@@ -1,76 +1,121 @@
-# Personal portfolio
+# Pratik Chamlagain — Software Engineering Portfolio
 
-A frontend-only portfolio built with **React + TypeScript + Vite**. Responsive, with light/dark themes, filterable projects, project detail dialogs, experience, skills, contact links, and a downloadable CV.
+My personal portfolio, built with **React, TypeScript, and Vite**. It brings together my professional work in remittance, banking, and claims processing, my personal projects, education, and a downloadable PDF CV.
 
-## Run locally
+**Portfolio:** [pratik9815.github.io/pratik-portfolio](https://pratik9815.github.io/pratik-portfolio/)
+
+## Features
+
+- Responsive layout with light and dark themes, system-preference support, and a saved theme choice.
+- Professional and Personal project filters, expandable project listings, and project detail dialogs.
+- Work experience at Inficare Pvt. Ltd. and Smart Data Solutions.
+- Computer Engineering education at IOE Purwanchal Campus, Dharan.
+- A searchable PDF CV generated from the portfolio data, with page numbers and clickable contact links.
+- Email contact and copy-to-clipboard, keyboard navigation, visible focus, and reduced-motion support.
+
+The application runs entirely in the browser. Its asynchronous mock API reads a local TypeScript response; no backend, database, or API credentials are required.
+
+## Projects
+
+| Project                    | Type         | Focus                                                                            |
+| -------------------------- | ------------ | -------------------------------------------------------------------------------- |
+| Remittance System          | Professional | C#, ASP.NET Framework, SQL Server, IIS, and Azure DevOps at Inficare Pvt. Ltd.   |
+| Claims Processing Workflow | Professional | Java, SQL, paper-to-EDI conversion, and claims workflows at Smart Data Solutions |
+| TeaShopPOS                 | Personal     | ASP.NET Core MVC, PostgreSQL, SignalR, and GitHub Actions CI/CD                  |
+| StreamX                    | Personal     | Real-time messaging, SignalR, PostgreSQL, JWT, and GitHub Actions CI/CD          |
+
+TeaShopPOS and StreamX are private repositories. Their descriptions state **“Demo available upon request”** and omit source and live links, including in the PDF CV.
+
+## Local development
+
+Use **Node.js 24.x** and npm. Install the locked dependencies, then start Vite:
 
 ```sh
-npm install
+npm ci
 npm run dev
 ```
 
-Open the local URL printed by Vite. For production, run `npm run build` and deploy the generated `dist/` folder to any static host. No server, database, or API key is needed.
+Open the URL printed by Vite. The project uses `/pratik-portfolio/` as its base path in development and production.
 
-## Make it yours
-
-**Edit [`src/data/portfolio.ts`](src/data/portfolio.ts).** Your supplied profile, experience, and projects are included. The project section contains professional remittance and claims-processing contributions, plus TeaShopPOS and StreamX as personal projects. All content remains editable. The mock API asynchronously returns this typed response; there is no network dependency for the content.
-
-| Content                               | Where to edit                                    |
-| ------------------------------------- | ------------------------------------------------ |
-| Name, role, initials, location, email | `data.profile`                                   |
-| Hero headline and introduction        | `data.profile.headline` / `introduction`         |
-| About, current focus, interests       | `data.profile.about` / `currently` / `interests` |
-| Social profile links                  | `data.profile.socials`                           |
-| Project cards and case studies        | `data.projects`                                  |
-| Skills and disciplines                | `data.expertise`                                 |
-| Work timeline                         | `data.experience`                                |
-| Education                             | `data.education`                                 |
-| Contact heading and email subject     | `data.contact`                                   |
-| Availability text and indicator       | `data.profile.available` / `availability`        |
-
-Add or remove items freely. Project filters are generated from the unique `category` values (currently Professional and Personal). Set `image` to a screenshot or illustration URL (for example `/projects/my-app.webp`, with the file in `public/projects/`), or keep `null` for a simple preview using the project’s name and category. Professional cards describe your contributions and employer without requiring public source or live links.
-
-Education appears in the About section and the PDF CV. The Computer Engineering entry at IOE Purwanchal Campus, Dharan, uses your supplied details. Its optional `period` is left `null`; add your actual study dates or graduation year when desired. Education can be extended with more entries or omitted entirely.
-
-Add your URLs to `links.live` and `links.source`; links set to `null` are hidden. Use full `https://` URLs. Project cards always open their case study with `overview`, `highlights`, and `role`. Edit `public/favicon.svg` and the initial title/description in `index.html` for your identity; the loaded profile also updates the title and description at runtime.
-
-TeaShopPOS and StreamX are private: their repository links are omitted, and their descriptions say “Demo available upon request.” This also applies to the generated PDF CV. The GitHub social link leads to your profile.
-
-The section initially shows two projects. **See more** reveals additional entries, and **See less** collapses them. Changing a category resets the visible count. Configure the initial number and reveal increment through `data.projectDisplay`; adding more projects to the array automatically makes them available through See more. The CV includes all projects regardless of which ones are expanded on screen.
-
-### Add your CV
-
-The default CV is a searchable **PDF generated in the browser from your profile data**, including your profile, clickable contact links, skills, experience, and projects. It includes automatic page breaks and page numbers. Edit the mock response and the next download reflects your changes. No backend is needed, and PDF support loads only when someone clicks “Download CV”.
-
-To offer your own pre-designed PDF instead:
-
-1. Place the PDF at `public/cv.pdf`.
-2. Set `profile.cv` to `{ url: '/cv.pdf', filename: 'Your-Name-CV.pdf' }`.
-
-Use a same-origin file for reliable downloading. You can use any supported file type; the button displays the extension automatically.
-
-### Contact behavior
-
-“Say hello” opens the visitor's mail app addressed to `profile.email`, using `contact.subject`. Copy email copies that address and announces the result. Update `hello@example.com` before sharing the site. There is no backend and no simulated successful form submission.
-
-### Themes and style
-
-The first visit follows the system preference. The theme button saves an explicit preference in local storage and prevents startup theme flash. Both themes use the semantic variables in `src/styles/tokens.css`; layout and components are in `src/styles/global.css`. Fonts are bundled locally. Visual intent is recorded in `DESIGN.md`.
-
-### Optional future API
-
-Replace `getPortfolio()` in `src/features/portfolio/api.ts` with a real fetch if needed. Preserve the `PortfolioResponse` shape and abort signal. The present implementation remains fully frontend-only and works without an internet connection after the static assets load.
-
-## Checks
+## Validation and production preview
 
 ```sh
-npm run typecheck
-npm run lint
-npm test
-npm run format:check
-npm run build
+npm run check
+npm run preview
 ```
 
-## References
+`check` runs ESLint, Prettier validation, the Vitest test suite, TypeScript checking, and a production build. `preview` serves the generated `dist/` folder locally; open its printed URL.
 
-The content hierarchy and interaction direction were informed by [Brittany Chiang](https://brittanychiang.com/), [Rauno Freiberg](https://rauno.me/), and [Bruno Simon](https://bruno-simon.com/). The layouts, copy, code, illustrations, and miniature app previews here are original. No third-party portfolio code was copied.
+Individual commands are also available:
+
+| Command                | Purpose                                                 |
+| ---------------------- | ------------------------------------------------------- |
+| `npm run typecheck`    | Check TypeScript                                        |
+| `npm run lint`         | Check React, TypeScript, Hooks, and accessibility rules |
+| `npm test`             | Run unit and interaction tests                          |
+| `npm run format`       | Format project files                                    |
+| `npm run format:check` | Check formatting                                        |
+| `npm run build`        | Type-check and generate the production site in `dist/`  |
+
+## GitHub Pages deployment
+
+This repository uses the **`gh-pages` package** to publish the built site to the `gh-pages` branch.
+
+1. Ensure Git is authenticated for this repository and your local `origin` points to `pratik9815/pratik-portfolio`.
+2. Run:
+
+   ```sh
+   npm run deploy
+   ```
+
+   The `predeploy` script runs all checks and builds the site first. If they pass, `gh-pages` publishes `dist/` and adds `.nojekyll`.
+
+3. In **Settings → Pages → Build and deployment**, select **Deploy from a branch**, choose **`gh-pages`**, select **`/(root)`**, and save. The branch must exist before it can be selected.
+4. The configured site address is [Pratik's portfolio](https://pratik9815.github.io/pratik-portfolio/).
+
+`vite.config.ts` sets `base: '/pratik-portfolio/'`. Data-driven project images and configured CV files resolve through `import.meta.env.BASE_URL`, so local asset URLs also work under the repository prefix. If the repository name or hosting path changes, update the Vite base, the `homepage` metadata, and the portfolio URL above before rebuilding.
+
+Deployment references: [Vite's GitHub Pages guide](https://vite.dev/guide/static-deploy.html#github-pages) and [GitHub's publishing-source documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
+
+## Portfolio content
+
+Edit **[src/data/portfolio.ts](src/data/portfolio.ts)**. The same typed response drives the page and the generated CV.
+
+| Content                                                 | Data field                                                                 |
+| ------------------------------------------------------- | -------------------------------------------------------------------------- |
+| Name, role, contact details, location, and social links | `data.profile`                                                             |
+| Hero, About text, current focus, and interests          | `data.profile.headline`, `introduction`, `about`, `currently`, `interests` |
+| Professional contributions and personal projects        | `data.projects`                                                            |
+| Initial project count and See more increment            | `data.projectDisplay`                                                      |
+| Skills                                                  | `data.expertise`                                                           |
+| Employment timeline                                     | `data.experience`                                                          |
+| Education and optional study dates                      | `data.education`                                                           |
+| Contact copy and email subject                          | `data.contact`                                                             |
+
+Project categories generate the filters automatically. The first two entries appear initially; **See more** reveals the remaining projects and **See less** collapses them. Category changes reset the visible count. The CV includes every project, regardless of the expanded state.
+
+Put project images in `public/projects/` and reference them as `/projects/filename.svg` or `/projects/filename.webp`. External image URLs are also supported. A `null` image uses a text-based preview; `null` source and live URLs hide those links.
+
+### CV and contact
+
+With `profile.cv.url: null`, **Download CV** generates a PDF from the current data. PDF support loads on demand. To offer a separately designed PDF, place it in `public/cv.pdf` and set:
+
+```ts
+cv: { url: '/cv.pdf', filename: 'Pratik-Chamlagain-CV.pdf' }
+```
+
+The file URL automatically respects the GitHub Pages base path. Use a same-origin file for a direct download.
+
+**Say hello** opens an email draft to `profile.email` with `contact.subject`. The site does not submit contact messages to a server.
+
+## Code organization
+
+- `src/components/`: navigation, project previews and dialogs, education, and CV download controls.
+- `src/data/portfolio.ts`: editable content.
+- `src/features/portfolio/`: types, mock API, loading state, PDF generation, and tests.
+- `src/lib/publicAssetUrl.ts`: public asset resolution for repository-based hosting.
+- `src/styles/`: shared design tokens, responsive layouts, and both themes.
+- `public/`: favicon and original project illustrations.
+- [DESIGN.md](DESIGN.md): maintained visual and interaction decisions.
+
+Fonts are bundled locally using Fontsource. Icons use Lucide, PDF generation uses jsPDF, and interaction tests use Vitest and React Testing Library.

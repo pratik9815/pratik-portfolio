@@ -72,6 +72,14 @@ describe('portfolio interactions', () => {
         expertise.length +
         experience.length,
     );
+    expect(
+      screen.getByRole('img', {
+        name: 'Remittance System project illustration',
+      }),
+    ).toHaveAttribute(
+      'src',
+      `${import.meta.env.BASE_URL}projects/remittance-system.svg`,
+    );
     fireEvent.click(screen.getByRole('button', { name: 'Personal' }));
     expect(
       screen.getByRole('heading', { name: 'TeaShopPOS' }),
@@ -223,7 +231,7 @@ describe('portfolio interactions', () => {
     vi.mocked(getPortfolio).mockResolvedValue(response);
     await showPortfolio();
     for (const link of screen.getAllByRole('link', { name: /Download CV/ })) {
-      expect(link).toHaveAttribute('href', '/cv.pdf');
+      expect(link).toHaveAttribute('href', `${import.meta.env.BASE_URL}cv.pdf`);
       expect(link).toHaveAttribute('download', 'My-CV.pdf');
     }
     expect(savePdf).not.toHaveBeenCalled();
