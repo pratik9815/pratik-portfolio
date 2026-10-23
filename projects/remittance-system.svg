@@ -1,0 +1,152 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="840"
+  height="540"
+  viewBox="0 0 840 540"
+  fill="none"
+>
+  <defs>
+    <linearGradient
+      id="bg"
+      x1="0"
+      y1="0"
+      x2="840"
+      y2="540"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop stop-color="#EDE7F5" />
+      <stop offset="1" stop-color="#DCD6EB" />
+    </linearGradient>
+  </defs>
+  <rect width="840" height="540" fill="url(#bg)" />
+  <circle cx="709" cy="169" r="176" stroke="#BAACCF" stroke-opacity=".4" />
+  <circle
+    cx="709"
+    cy="169"
+    r="127"
+    stroke="#BAACCF"
+    stroke-opacity=".4"
+    stroke-dasharray="4 7"
+  />
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="64" y="63" fill="#76608F" font-size="10" letter-spacing="2">
+      PROFESSIONAL EXPERIENCE
+    </text>
+    <text x="64" y="94" fill="#4B3B65" font-size="17" font-weight="600">
+      Inficare Pvt. Ltd.
+    </text>
+    <text
+      x="60"
+      y="189"
+      fill="#342744"
+      font-size="59"
+      font-weight="700"
+      letter-spacing="-2.4"
+    >
+      Money in motion.
+    </text>
+    <text x="64" y="237" fill="#67547E" font-size="17">
+      Remittance &amp; banking systems
+    </text>
+    <text x="64" y="274" fill="#87759A" font-size="12">
+      Application development, data, and delivery.
+    </text>
+    <g transform="translate(655 241)">
+      <rect
+        x="-11"
+        y="-10"
+        width="74"
+        height="74"
+        rx="22"
+        fill="#C5B8DA"
+        fill-opacity=".5"
+      />
+      <path
+        d="M2 11h41m-9-9 9 9-9 9M43 37H2m9-9-9 9 9 9"
+        stroke="#76608F"
+        stroke-width="3"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </g>
+    <path
+      d="M148 382h540"
+      stroke="#B7A6CD"
+      stroke-width="2"
+      stroke-dasharray="4 6"
+    />
+    <g>
+      <rect
+        x="64"
+        y="332"
+        width="221"
+        height="103"
+        rx="13"
+        fill="#FAF8FD"
+        stroke="#D1C6E0"
+      />
+      <text x="84" y="360" fill="#9988AC" font-size="8" letter-spacing="1.5">
+        APPLICATION
+      </text>
+      <text x="84" y="390" fill="#4B3B65" font-size="17" font-weight="600">
+        C# &amp; ASP.NET
+      </text>
+      <text x="84" y="414" fill="#8B799D" font-size="10">
+        ASP.NET Framework
+      </text>
+    </g>
+    <g>
+      <rect
+        x="309"
+        y="332"
+        width="221"
+        height="103"
+        rx="13"
+        fill="#FAF8FD"
+        stroke="#D1C6E0"
+      />
+      <text x="329" y="360" fill="#9988AC" font-size="8" letter-spacing="1.5">
+        DATA
+      </text>
+      <text x="329" y="390" fill="#4B3B65" font-size="17" font-weight="600">
+        SQL Server
+      </text>
+      <text x="329" y="414" fill="#8B799D" font-size="10">
+        Application data &amp; databases
+      </text>
+    </g>
+    <g>
+      <rect
+        x="554"
+        y="332"
+        width="221"
+        height="103"
+        rx="13"
+        fill="#FAF8FD"
+        stroke="#D1C6E0"
+      />
+      <text x="574" y="360" fill="#9988AC" font-size="8" letter-spacing="1.5">
+        DELIVERY
+      </text>
+      <text x="574" y="390" fill="#4B3B65" font-size="17" font-weight="600">
+        IIS &amp; Azure DevOps
+      </text>
+      <text x="574" y="414" fill="#8B799D" font-size="10">
+        Hosting &amp; delivery workflows
+      </text>
+    </g>
+    <text x="64" y="494" fill="#87759A" font-size="9" letter-spacing="1.3">
+      REMITTANCE SYSTEM
+    </text>
+    <text
+      x="775"
+      y="494"
+      text-anchor="end"
+      fill="#9988AC"
+      font-size="8"
+      letter-spacing=".7"
+    >
+      PROJECT ILLUSTRATION
+    </text>
+  </g>
+</svg>
